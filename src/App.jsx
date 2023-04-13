@@ -5,6 +5,7 @@ import Films from "./pages/Films";
 import Modele from "./pages/Modele";
 
 
+
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -14,12 +15,11 @@ import {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout/>}>
+        <Route path="/" element={<Layout/>}>
         <Route index element={<Accueil/>}/>
-        <Route path="/Films" element={<Films />} />
-        <Route path="/Modele/:Donnees" element={<Modele />} />
-
-    </Route>
+        <Route path="/Films" element={<Films/>}/>
+        <Route path="/Modele/:Donnees" element={<Modele />}/>
+        </Route>
   )
 );
 

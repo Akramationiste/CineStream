@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Infos({
   titre,
@@ -11,7 +11,7 @@ function Infos({
   Language,
   Duree,
   Video,
-  Rating,
+  Rating
 }) {
   return (
     <div>
@@ -55,15 +55,15 @@ function Infos({
               <td>{Duree}</td>
             </tr>
 
-            {/* row 8 */}
+            {/* row 7 */}
             <tr>
-              <th>8</th>
+              <th>7</th>
               <td>Rating</td>
               <td>{Rating}</td>
             </tr>
-            {/* row 9 */}
+            {/* row 8 */}
             <tr>
-              <th>9</th>
+              <th>8</th>
               <td>Actors</td>
               <td>{Actors}</td>
             </tr>
@@ -71,7 +71,7 @@ function Infos({
             <tr>
               <th>9</th>
               <td>Trailer</td>
-              <td><Link to={Video}/></td>
+              <td>{Video}</td>
             </tr>
           </tbody>
         </table>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Dark from "./Dark";
 
 export default function Navbar() {
   return (
@@ -21,6 +22,7 @@ export default function Navbar() {
               />
             </svg>
           </label>
+          
           <ul
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
@@ -61,7 +63,7 @@ export default function Navbar() {
       </div>
       <div className="navbar-end">
         <a className="btn bg-red-600 btn hover:bg-yellow-400 hover:text-black">
-          Jour / Nuit
+        <Dark />
         </a>
       </div>
     </div>
